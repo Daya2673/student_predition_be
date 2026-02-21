@@ -1,0 +1,5 @@
+Flask==2.3.3
+Streamlit==1.28.1
+Requests==2.31.0
+Pandas==2.0.3
+Flask-CORS==4.0.0

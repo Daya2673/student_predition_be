@@ -1,0 +1,110 @@
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit Test / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# Flask
+instance/
+.webassets-cache
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Model Files (Optional - uncomment if needed)
+# *.pkl
+# *.joblib
+# *.h5
+# *.model
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# IDE Extensions
+*.code-workspace
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+.apdisk
+
+# Windows
+$RECYCLE.BIN/
+ehthumbs.db
+desktop.ini
+
+# Node (if using npm)
+node_modules/
+npm-debug.log
+
+# Misc
+.cache/

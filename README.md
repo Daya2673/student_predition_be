@@ -1,37 +1,50 @@
-# Enhanced Student Performance Prediction 🎓📊
+# Student Performance Prediction
 
-## 📌 Project Overview
-Enhanced Student Performance Prediction is a machine learning–based project designed to analyze and predict students’ academic performance. The system identifies key factors influencing student outcomes and helps educators take early action to improve learning results.
+A simple web application to predict student final scores based on study hours, attendance, and previous marks using machine learning.
 
----
+## Project Structure
 
-## 🎯 Objectives
-- Predict student academic performance accurately  
-- Analyze factors affecting student success  
-- Support early intervention for at-risk students  
-- Improve educational decision-making  
+```
+student-performance-prediction/
+├── backend/
+│   ├── app.py          # Flask API server
+│   └── model.pkl       # Trained ML model
+├── frontend/
+│   └── streamlit_app.py # Streamlit UI
+├── data/
+│   └── student_data.csv # Sample dataset
+├── requirements.txt    # Python dependencies
+└── README.md           # This file
+```
 
----
+## Installation
 
-## 🧠 Features
-- Data preprocessing and cleaning  
-- Exploratory Data Analysis (EDA)  
-- Machine learning model training  
-- Performance evaluation and comparison  
-- Scalable and modular design  
+1. Clone or download the project.
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
----
+## Running the Application
 
-## 🛠️ Technologies Used
-- **Language:** Python  
-- **Libraries:**  
-  - NumPy  
-  - Pandas  
-  - Matplotlib  
-  - Seaborn  
-  - Scikit-learn  
-- **Tools:** Jupyter Notebook / VS Code  
+1. Start the Flask backend:
+   ```
+   cd backend
+   python app.py
+   ```
+   The API will run on http://localhost:5000
 
----
+2. In a new terminal, start the Streamlit frontend:
+   ```
+   streamlit run frontend/streamlit_app.py
+   ```
+   The UI will open in your browser.
 
-## 📂 Project Structure
+## Usage
+
+- Enter study hours, attendance percentage, and previous marks.
+- Click "Predict Final Score" to get the prediction.
+
+## Model
+
+The application uses a Linear Regression model trained on the sample dataset. The model is saved as `model.pkl` and loaded by the Flask API for predictions.
