@@ -1,5 +1,5 @@
 # Student routes for student-specific operations
-`from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify
 from services.data_service import DataService
 
 # Create blueprint for student routes

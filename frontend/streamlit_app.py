@@ -129,9 +129,8 @@ def student_dashboard():
             with col2:
                 st.metric("📝 Assignments Done", student_data['assignments'])
             with col3:
-                st.metric("⭐ CGPA", f"{student_data['cgpa']}")
-            with col4:
-                st.metric("🏆 Excellence", f"{student_data['excellence']}")
+                st.metric("⭐ CGPA", f"{student_data['cgpa']}"
+                )
             st.write("---")
             
             col1, col2 = st.columns(2)
